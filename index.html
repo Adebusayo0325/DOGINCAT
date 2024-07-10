@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$WOOF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- <header>
+    <nav>
+        <div class="logo">
+            <img src="" alt="Opay">
+        </div>
+        <ul class="naved">
+            <li>About</li>
+            <li></li>
+            <li></li>
+            
+        </ul>
+    </nav>
+</header> -->
+
+<div class="main">
+    <div class="name"><h1>DOG</h1>
+    <h2>IN A CAT'S WORLD</h2> </div>
+    <p class="type">Bring back the Dog meta , Bring back the cat Meta but $Woof brings you both.  </p>
+
+</div>
+<div class="logo">
+       <img src="logo.jpg" alt="Pay">
+    <img src="small.jpg" alt="Pay">
+</div>
+<div class="about">
+    <div class="right">
+    
+    <p class="aboutauto xx"> </p>
+
+    </div>
+</div>
+
+<div class="token">
+    <div class="lefted">
+    <h3>TOKENOMICS</h3>
+    <ul>
+        <li>TOTAL SUPPLY: 1000000000</li>
+
+        <li> ZERO TAX</li>
+        <li> LIQUIDITY BURNED</li>
+        <li> CONTRACT RENOUNCED</li>
+
+    </ul>
+    </div>
+
+    <div class="righted">
+        <div class="pay">
+            $DRUID
+            <P>Community</P>
+        </div>
+    </div>
+
+<div class="ca">
+  CA:  hhb jmvdlvdfjlv cmvnC nbn c c mc nxx xn   jj
+</div>
+
+<div class="footer">
+    <ul class="socials">
+
+                <li> <a href= "https://x.com/woof_onSOLANA?t=rDk90npIg85IlziIRCTEXw&s=09" ><img class="x icon" src="twitter.png" alt="X" /> </a> </li>
+                
+                        <li> <a href="https://t.me/+RKW6WVHlCUAzZTY8" ><img class="telegram icon" src="telegram.png" alt="tg" /> </a></li>
+                
+                        <li> <a href="https://druidwifhat.netlify.app/" ><img class="site icon" src="site.png" alt="web" /> </a></li>
+    </ul>
+    <div class="down">
+          &copy;2024 $WOOF || ALL RIGHTS RESERVED  
+    </div>
+
+</div>
+</body>
+<script type="text/javascript" charset="utf-8">
+    const AboutAuto = document.querySelector('.aboutauto')
+AboutAuto.focus()
+//AboutAuto.TabIndex = 1
+let Long = "💵 WOOF is back with a fresh start and a strategic focus. We are the next MEW, but with a twist: MEW is a cat in a world of dogs, and $WOOF is the dog in a world of cats.."
+let I = 0;
+let Sec = Long.length
+let Kk;
+let maxx = 0
+AutoText()
+function  AutoText () {
+      if(I >= Sec ){
+      if(Sec <  0) {
+          Sec = Long.length;
+          I = 0;
+      }
+      else{
+     
+      setTimeout(() => {
+    Sec --;
+      Kk = Long.split(' ').join(' ').slice(0, Sec);
+      
+      console.log(`This is ${Sec}th time `, Kk)
+      }, 1000);
+      maxx++
+      }
+  }
+   else {
+       I++
+   Kk =  Long.split(' ').join(' ').slice(0,I);
+     console.log(`This is ${I}th time `, Kk)
+
+   }
+   AboutAuto.innerText = Kk;
+   if (maxx < 10000) {
+    setTimeout( AutoText, 100);
+}
+
+}
+
+</script>
+</html>
