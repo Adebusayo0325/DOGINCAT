@@ -48,6 +48,12 @@ z-index: 1;
     font-size: 3rem;
     color: white;
 }
+.name h2{
+    color: blue;
+    font-size: 2rem;
+    font-style: italic;
+}
+
 .type{
     font-size: 1.6rem;
 }
@@ -59,7 +65,7 @@ z-index: 1;
     justify-content:center ;
     align-items: center;
     /* flex: 1 1 40rem; */
-    background-color: rgba(121, 196, 171,0.1);
+    background-color: yellow;
 }
 .logo img{
      width: 200px;
