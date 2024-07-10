@@ -110,7 +110,7 @@ position: relative;
     left: 0;
     background-color: 
     rgba(0,0,0,0.6);
-    z-index: -1;
+    z-index: 1;
 }
 .lefted, .righted{
     z-index: 3;
@@ -170,10 +170,9 @@ margin-bottom: 2rem;
     background-image: url(2nd.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    z-index: -2;
+    z-index: 2;
     margin-top: 0vh;
-
+    position: relative;
 }
 .lefted, .righted{
     z-index: 3;
@@ -181,6 +180,7 @@ margin-bottom: 2rem;
 .footer{
     margin-top: 2rem;
     text-align: center;
+    margin-bottom: 2rem;
 }
 .socials {
     display: flex;
@@ -188,12 +188,24 @@ margin-bottom: 2rem;
     padding: 0.5rem;
     height: 50px;
     justify-content: space-around;
-    list-style-type: none;
+ 
+}
+.iconli{
+    cursor: pointer;
+   color: white;
+   text-decoration: none;
+   z-index: 100;
+   background-color: yellow;
+   width: 40px;
+   height: 40px;
+   pointer-events: auto;
+}
+.iconli:hover{
+    background-color: gray;
 }
 .icon{
     width: 30px;
     height: 30px;
-    background-color: white;
     border-radius: 50%;
 }
 
@@ -268,20 +280,20 @@ background-color: rgba(179, 76, 132, 0.5);
     background-image: url(bx.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 2;
     position: relative;
-    z-index: -2;
-    
+
 }
 .token:before{
     content: '';
     width:100%;
     height: 100%;
     position: absolute;
-    top: 0;
+    bottom: 0 ;
     left: 0;
     background-color: 
     rgba(0,0,0,0.6);
-    z-index: -1;
+    z-index: 1;
 }
 .lefted, .righted{
     z-index: 3;
@@ -321,6 +333,17 @@ background-color: rgba(179, 76, 132, 0.5);
 font-weight: 700;
 margin-bottom: 2rem;
 margin-top: 4rem;
+}
+.iconli{
+    cursor: pointer;
+   color: white;
+   text-decoration: none;
+   z-index: 100;
+   background-color: yellow;
+   width: 20px;
+   height: 20px;
+   pointer-events: auto;
+   position: relative;
 }
 
 }
