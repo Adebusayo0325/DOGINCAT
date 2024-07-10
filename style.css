@@ -110,10 +110,10 @@ position: relative;
     left: 0;
     background-color: 
     rgba(0,0,0,0.6);
-    z-index: 1;
+    z-index: 3;
 }
 .lefted, .righted{
-    z-index: 3;
+    z-index: 10;
 }
 .lefted h3{
     width: 100%;
@@ -170,12 +170,12 @@ margin-bottom: 2rem;
     background-image: url(2nd.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 2;
+    z-index: 1;
     margin-top: 0vh;
     position: relative;
 }
 .lefted, .righted{
-    z-index: 3;
+    z-index: 10;
 }
 .footer{
     margin-top: 2rem;
@@ -195,7 +195,7 @@ margin-bottom: 2rem;
    color: white;
    text-decoration: none;
    z-index: 100;
-   background-color: yellow;
+   
    width: 40px;
    height: 40px;
    pointer-events: auto;
@@ -208,6 +208,12 @@ margin-bottom: 2rem;
     height: 30px;
     border-radius: 50%;
 }
+
+.down, .lefted h3, .lefted ul, .lefted li , .righted .pay, .ca{
+    z-index: 20;
+    position: relative;
+}
+
 
 @media screen and (max-width: 500px) {
     .main::before{
@@ -280,7 +286,7 @@ background-color: rgba(179, 76, 132, 0.5);
     background-image: url(bx.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 2;
+    z-index: 1;
     position: relative;
 
 }
@@ -293,10 +299,10 @@ background-color: rgba(179, 76, 132, 0.5);
     left: 0;
     background-color: 
     rgba(0,0,0,0.6);
-    z-index: 1;
+    z-index: 10;
 }
 .lefted, .righted{
-    z-index: 3;
+    z-index: 100;
 }
 .none{
     display: none;
@@ -304,6 +310,7 @@ background-color: rgba(179, 76, 132, 0.5);
 
 .footer{
     margin-top: 1.5rem;
+    z-index: 100;
 }
 .socials {
     display: flex;
@@ -345,5 +352,8 @@ margin-top: 4rem;
    pointer-events: auto;
    position: relative;
 }
-
+.down, .lefted h3, .lefted ul, .lefted li {
+    z-index: 20;
+    position: relative;
+}
 }
