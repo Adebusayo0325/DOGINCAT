@@ -144,8 +144,10 @@ font-weight: 700;
 margin-bottom: 2rem;
 }
 .ca{
-    width: 100%;
+    max-width: 100%;
     text-align: center;
+    text-wrap: wrap;
+    font-size: 0.8rem;
 }
 .right .xx {
     padding: 2rem;
